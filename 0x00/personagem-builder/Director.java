@@ -1,6 +1,6 @@
 public class Director {
 
-    void buildGuerreiro(Builder builder){
+    public void buildGuerreiro(Builder builder){
         builder.setNome("Guerreiro");
         builder.setTipo(TipoPersonagem.GUERREIRO);
         builder.setInteligencia(1);
