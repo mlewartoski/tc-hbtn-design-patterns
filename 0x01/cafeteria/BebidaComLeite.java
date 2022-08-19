@@ -8,14 +8,14 @@ public class BebidaComLeite extends BebidaDecorator{
     }
 
     @Override
-    List<String> obterIngredientes() {
+    public List<String> obterIngredientes() {
         List<String> ingredientes = this.getBebidaDecorada().obterIngredientes();
         ingredientes.add("leite");
         return ingredientes;
     }
 
     @Override
-    double obterPreco() {
+    public double obterPreco() {
         return this.getBebidaDecorada().obterPreco() + 3.2;
     }
 }
