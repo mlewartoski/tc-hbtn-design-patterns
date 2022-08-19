@@ -6,6 +6,6 @@ public class ArmaduraDecorator extends NaveEspacialDecorator {
 
     @Override
     public int getSaude() {
-        return this.naveEspacial.getSaude() + 150;
+        return this.naveDecorada.getSaude() + 150;
     }
 }
