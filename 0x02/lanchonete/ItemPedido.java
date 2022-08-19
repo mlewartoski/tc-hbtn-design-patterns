@@ -23,8 +23,4 @@ public class ItemPedido {
         this.nome = nome;
     }
 
-    @Override
-    public String toString() {
-        return "\t- " + tipo + " " + nome + "\n";
-    }
 }

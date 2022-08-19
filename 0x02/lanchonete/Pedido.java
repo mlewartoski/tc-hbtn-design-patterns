@@ -19,11 +19,9 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String toString =
-                "Fora da caixa:\n" +
-                itensForaCaixa.stream().map(ItemPedido::toString).reduce("", String::concat) +
-                "Dentro da caixa:\n" +
-                itensDentroCaixa.stream().map(ItemPedido::toString).reduce("", String::concat);
-        return toString;
+        return "\tFora da caixa:\n" +
+                itensForaCaixa.stream().map(itemPedido -> "\t\t- " + itemPedido.getTipo() + " " + itemPedido.getNome() + "\n").reduce("", String::concat) +
+                "\tDentro da caixa:\n" +
+                itensDentroCaixa.stream().map(itemPedido -> "\t\t- " + itemPedido.getTipo() + " " + itemPedido.getNome() + "\n").reduce("", String::concat);
     }
 }
