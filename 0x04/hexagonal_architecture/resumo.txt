@@ -1,0 +1,15 @@
+O conceito de Arquitetura Hexagonal foi proposto por Alistair Cockburn, em meados dos anos 90, em um artigo postado na primeira wiki que foi desenvolvida, chamada WikiWikiWeb (cujos artigos tratavam principalmente de temas relacionados com Engenharia de Software).
+A ideia da Arquitetura Hexagonal é construir sistemas que favorecem reusabilidade de código, alta coesão, baixo acoplamento, independência de tecnologia e que são mais fáceis de serem testados
+Uma Arquitetura Hexagonal divide as classes de um sistema em dois grupos principais:
+- Classes de domínio, isto é, diretamente relacionadas com o negócio do sistema.
+- Classes relacionadas com infraestrutura, tecnologias e responsáveis pela integração com sistemas externos (tais como bancos de dados).
+Além disso, em uma Arquitetura Hexagonal, classes de domínio não devem depender de classes relacionadas com infraestrutura, tecnologias ou sistemas externos. A vantagem dessa divisão é desacoplar esses dois tipos de classes.
+Como pontos fortes da utilização desta arquitetura, podemos enumerar:
+- Solução de Serviços Externos Independentes
+- Possibilita adiar algumas decisões técnicas
+- Criação e substituição de adaptadores
+- Fácil de testar a aplicação
+- Tecnologias fáceis de trocar
+As duas arquiteturas são similares, fazendo referência uma a outra. A principal diferença é que na Arquitetura Hexagonal temos o uso de portas e adaptadores para comunicação com as classes de domínio.
+A Arquitetura Hexagonal não pode ser utilizada em qualquer tipo de projeto. Em sistemas muito pequenos ou que dificilmente irá gerar trabalho de manutenção/novas features talvez não seja tão interessante o custo-benefício de sua implementação, já que demanda um alto grau de esforço de desenvolvimento.
+
